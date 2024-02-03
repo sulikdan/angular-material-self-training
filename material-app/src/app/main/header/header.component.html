@@ -1,0 +1,47 @@
+<div class="my-header">
+
+  <mat-grid-list cols="8" rowHeight="75px">
+
+    <!--  Nav menu    -->
+    <mat-grid-tile colspan="2" [style.justify-content]="'start'" >
+      <div>
+        <button mat-button [matMenuTriggerFor]="third">1st menu tab</button>
+        <mat-menu #third="matMenu" yPosition="below">
+          <button mat-menu-item>Item 1</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="second">2nd menu tab</button>
+        <mat-menu #second="matMenu" yPosition="below">
+          <button mat-menu-item>Item 1</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="third">3rd menu tab</button>
+        <mat-menu #third="matMenu" yPosition="below">
+          <button mat-menu-item>Item 1</button>
+        </mat-menu>
+      </div>
+    </mat-grid-tile>
+
+
+    <!--  App name  -->
+    <mat-grid-tile colspan="5">
+      <h2>PETA</h2>
+      <h4>People Eating Tasty Animals</h4>
+    </mat-grid-tile>
+
+
+    <!--  user Icon  -->
+    <mat-grid-tile colspan="1">
+      <mat-icon aria-hidden="false" aria-label="User logo menu" fontIcon="account_circle"></mat-icon>
+    </mat-grid-tile>
+
+    <!--    @for (tile of tiles; track tile) {-->
+    <!--      <mat-grid-tile-->
+    <!--        [colspan]="tile.cols"-->
+    <!--        [rowspan]="tile.rows"-->
+    <!--        [style.background]="tile.color">{{ tile.text }}-->
+    <!--      </mat-grid-tile>-->
+    <!--    }-->
+  </mat-grid-list>
+
+</div>
