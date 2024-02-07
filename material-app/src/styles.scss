@@ -7,9 +7,38 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 
-.align-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
+.text-center {
+  text-align: center;
+}
 
+.justify-start {
+  justify-content: start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-s {
+ align-items: start;
+}
+
+.align-c {
+  align-items: center;
+}
+
+.align-e {
+  align-items: end;
+}
+
+.flex-auto{
+  flex: auto;
 }

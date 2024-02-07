@@ -2,9 +2,32 @@
   background: #a80da8;
 }
 
-.mat-grid-tile {
-  align-items: flex-start;
+//Using descendends
+// class >(child)> class
+// Only with Encapsulation.none
+//.align-left > .mat-grid-tile-content{
+//  display: flex !important;
+//  //flex-direction: column;
+//  justify-content: start !important;
+//}
+
+
+//Using ng-deep - WITH-OUT Encapsulation None
+//
+::ng-deep .align-left > .mat-grid-tile-content {
+  display: flex;
   justify-content: start;
-  background: transparent;
 }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.display-flex {
+  display: flex;
+  flex-direction: row;
+}
+
 
