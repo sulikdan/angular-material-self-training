@@ -14,20 +14,9 @@
 
 //Using ng-deep - WITH-OUT Encapsulation None
 //
-::ng-deep .align-left > .mat-grid-tile-content {
-  display: flex;
-  justify-content: start;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.display-flex {
-  display: flex;
-  flex-direction: row;
-}
+//::ng-deep .align-left > .mat-grid-tile-content {
+//  display: flex;
+//  justify-content: start;
+//}
 
 
